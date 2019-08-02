@@ -1,0 +1,586 @@
+.materia-form {
+	input[type=text],
+	input[type=email],
+	textarea, .float-label, .field-bar, .auto-textarea, button, [type="checkbox"]:not(:checked) + label:before,
+	[type="checkbox"]:checked + label:before, div.fancy-select div.trigger, div.fancy-select ul.options, div.fancy-select ul.options.open, div.fancy-select ul.options.overflowing, div.fancy-select ul.options.overflowing.open, div.fancy-select ul.options li {
+		transition: all 0.25s ease-out;
+	}
+
+	.wrapper-title {
+		font-weight: 800;
+		margin-bottom: 10px;
+	}
+
+	.field-wrapper {
+		display: block;
+		margin-right: 2.3576520234%;
+		width: 100%;
+		position: relative;
+		margin-bottom: 2.5rem;
+		&.meta {
+			input[type=text] {
+				padding-right: 40px;
+			}
+			&:before {
+				content: attr(data-meta);
+				position: absolute;
+				right: 0;
+				bottom: 8px;
+				font-weight: 300;
+			}
+		}
+	}
+
+	.field-wrapper:last-child {
+		margin-right: 0;
+	}
+
+	.button-wrapper {
+		display: block;
+		margin-right: 2.3576520234%;
+		width: 100%;
+	}
+	.button-wrapper:last-child {
+		margin-right: 0;
+	}
+
+	input[type=text],
+	input[type=email],
+	textarea {
+		background-color: transparent;
+		border: 0;
+		border-bottom: 1px solid rgba(#fff, .7);
+		color: #fff;
+		display: block;
+		font-size: 1.125rem;
+		font-weight: 300;
+		height: 36px;
+		vertical-align: middle;
+		width: 100%;
+		padding: 0 10px;
+	}
+	input[type=text]::placeholder,
+	input[type=email]::placeholder,
+	textarea::placeholder {
+		color: #fff;
+		opacity: 0;
+	}
+	input[type=text]:focus, input[type=text]:valid,
+	input[type=email]:focus,
+	input[type=email]:valid,
+	textarea:focus,
+	textarea:valid {
+		outline: 0;
+	}
+	input[type=text]:focus::placeholder, input[type=text]:valid::placeholder,
+	input[type=email]:focus::placeholder,
+	input[type=email]:valid::placeholder,
+	textarea:focus::placeholder,
+	textarea:valid::placeholder {
+		opacity: .5;
+
+	}
+
+	.float-label {
+		color: #fff;
+		font-size: .9rem;
+		position: absolute;
+		pointer-events: none;
+		top: 0;
+	}
+
+	.field-bar {
+		transform: translateX(-50%);
+		position: relative;
+		left: 50%;
+		height: 2px;
+		width: 0%;
+		display: block;
+		background: #fff;
+		top: -1px;
+		z-index: 1;
+	}
+
+	/* active state */
+	.float-field:focus ~ label,
+	.float-field:valid ~ label,
+	textarea:focus ~ label,
+	textarea:valid ~ label,
+	.fancy-select.selected ~ label,
+	.fancy-select.open ~ label {
+		top: -20px;
+		font-size: .75rem;
+		color: #fff;
+	}
+
+	input[type=text]:focus ~ .field-bar,
+	input[type=text]:valid ~ .field-bar,
+	input[type=email]:focus ~ .field-bar,
+	input[type=email]:valid ~ .field-bar,
+	.fancy-select.selected ~ .field-bar,
+	.fancy-select.open ~ .field-bar,
+	textarea:focus ~ .field-bar,
+	textarea:valid ~ .field-bar {
+		width: 100%;
+	}
+
+	select {
+		background-color: transparent;
+		appearance: none;
+		-webkit-appearance: none;
+		border: 0;
+		border-bottom: 1px solid rgba(#fff, .7);;
+		border-radius: 0;
+		color: #fff;
+		font-size: .75rem;
+		font-weight: bold;
+		height: 30px;
+		position: relative;
+		width: 100%;
+	}
+	select ~ label {
+		opacity: 1;
+	}
+	select:focus {
+		outline: none;
+	}
+	select:focus ~ .field-bar {
+		width: 100%;
+	}
+	select:focus ~ label {
+		opacity: 1;
+	}
+
+	.auto-textarea {
+		resize: none;
+		overflow: hidden;
+		line-height: 1.6;
+		height: 60px;
+		padding-bottom: .5rem;
+	}
+
+	.button-wrapper button {
+		background-color: transparent;
+		border-radius: 40px;
+		box-sizing: border-box;
+		color: #fff;
+		display: inline-block;
+		height: 46px;
+		position: relative;
+		width: 160px;
+		z-index: 2;
+		font-weight: 800;
+		text-decoration: none;
+		border: 2px solid #fff;
+		cursor: pointer;
+	}
+	.button-wrapper button:hover {
+		background: #fff;
+		color: $accent;
+	}
+
+	div.fancy-select {
+		position: relative;
+		color: #fff;
+		border-bottom: 1px solid rgba(#fff, .7);
+
+	}
+
+	div.fancy-select.disabled {
+		opacity: 0.5;
+	}
+
+/* 	div.fancy-select select:focus + div.trigger {
+		background: #fff;
+	} */
+
+	div.fancy-select select:focus + div.trigger.open {
+		box-shadow: none;
+	}
+
+	div.fancy-select div.trigger {
+		border-radius: 0;
+		cursor: pointer;
+		padding: 3px 24px 8px 12px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		position: relative;
+		color: #fff;
+		height: 36px;
+		width: 100%;
+		border-radius: 7px 7px 0 0;
+	}
+
+	div.fancy-select div.trigger:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border: 5px solid transparent;
+		border-top-color: #fff;
+		top: 15px;
+		right: 9px;
+		transition: .3s all ease;
+	}
+
+	div.fancy-select div.trigger.open {
+		color: $text;
+		box-shadow: none;
+		background: #fff;
+	}
+
+	div.fancy-select div.trigger.open:after {
+		border-top-color: $text;
+	}
+
+	div.fancy-select ul.options {
+		list-style: none;
+		margin: 0;
+		position: absolute;
+		top: 34px;
+		left: 0;
+		padding-left: 0;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 50;
+		max-height: 200px;
+		overflow: auto;
+		background: #FFF;
+		min-width: 100%;
+		border-radius: 0 0 7px 7px;
+	}
+
+	div.fancy-select ul.options.open {
+		visibility: visible;
+		top: 34px;
+		opacity: 1;
+	}
+
+	div.fancy-select ul.options.overflowing {
+		top: auto;
+		bottom: 40px;
+	}
+
+	div.fancy-select ul.options.overflowing.open {
+		top: auto;
+		bottom: 50px;
+	}
+
+	div.fancy-select ul.options li {
+		padding: 4px 12px;
+		color: $text;
+		cursor: pointer;
+		white-space: nowrap;
+		font-weight: normal;
+		text-transform: none;
+		transition: all 150ms ease-out;
+		&:before {
+			display: none;
+		}
+	}
+
+	div.fancy-select ul.options li.selected {
+		background: #c5c5c5;
+		color: $text;
+	}
+
+	div.fancy-select ul.options li.hover {
+		background: #c5c5c5;
+		color: $text;
+	}
+
+	/* CheckBox */
+	.checkbox-wrapper {
+		color: #333333;
+		position: relative;
+	/* 	margin-bottom: .8rem; */
+	}
+	.checkbox-wrapper label {
+		color: inherit;
+		cursor: pointer;
+		display: block;
+		position: relative;
+		user-select: none;
+		vertical-align: middle;
+		color: #fff;
+		margin: 0;
+	}
+	.checkbox-wrapper label:before {
+		width: 22px;
+		height: 22px;
+		border: 2px solid #fff;
+		margin: 0;
+		content: '';
+		display: inline-block;
+		transition: all .3s ease;
+		user-select: none;
+		will-change: background-color, border-color;
+		margin-right: 0.8rem;
+		border-radius: 3px;
+		vertical-align: middle;
+		background-color: transparent;
+	}
+	.checkbox-wrapper label:after {
+    top: 14px;
+    left: 9px;
+    width: 14px;
+    border: 2px solid #2d6bd7;
+    height: 7px;
+		content: '';
+		position: absolute;
+		transform: scale(0, 0) rotate(-90deg) translateZ(0);
+		transition: all .2s ease;
+		will-change: transform;
+		transform-origin: bottom left;
+		border-top-style: none;
+		border-right-style: none;
+	}
+	.checkbox-wrapper input[type=checkbox] {
+		display: none;
+	}
+	.checkbox-wrapper input[type=checkbox]:checked + label:before {
+		background-color: #fff;
+		border-color: #fff;
+	}
+	.checkbox-wrapper input[type=checkbox]:checked + label:after {
+		transform: scale(1, 1) rotate(-45deg) translateZ(0);
+	}
+	.checkbox-wrapper .message {
+		color: inherit;
+		font-size: 1.4rem;
+		margin-left: 2.8rem;
+	}
+	.checkbox-wrapper.has-error {
+		color: #f44336;
+	}
+	.checkbox-wrapper.has-error label:before {
+		border-color: #f44336;
+	}
+	.checkbox-wrapper.has-error span {
+		display: block;
+	}
+	.checkbox-wrapper.has-error input[type=checkbox]:checked + label:before {
+		background-color: #f44336;
+		border-color: #f44336;
+	}
+	
+	/* Radio */
+	.radio-wrapper {
+		color: #fff;
+		position: relative;
+		/* margin-bottom: .8rem; */
+	}
+	.radio-wrapper label {
+		color: inherit;
+		cursor: pointer;
+		display: block;
+		position: relative;
+		user-select: none;
+		vertical-align: middle;
+	}
+	.radio-wrapper label:before {
+		width: 22px;
+		height: 22px;
+		border: 2px solid #fff;
+		margin-top: -3px;
+		content: '';
+		display: inline-block;
+		transition: all .3s ease;
+		will-change: background-color, border-color;
+		user-select: none;
+		margin-right: 0.8rem;
+		border-radius: 50%;
+		vertical-align: middle;
+		background-color: transparent;
+	}
+	.radio-wrapper label:after {
+    top: 14px;
+    left: 11px;
+    width: 12px;
+    height: 12px;
+		content: '';
+		position: absolute;
+		transform: translate(-50%, -50%) scale(0, 0) translateZ(0);
+		transition: all .2s ease;
+		will-change: transform;
+		border-radius: 50%;
+		background-color: rgba(0, 0, 0, 0.45);
+	}
+	.radio-wrapper input[type=radio] {
+		display: none;
+	}
+	.radio-wrapper input[type=radio]:checked + label:before {
+		border-color: #fff;
+	}
+	.radio-wrapper input[type=radio]:checked + label:after {
+		transform: translate(-50%, -50%) scale(1, 1) translateZ(0);
+		background-color: #fff;
+	}
+	.radio-wrapper .message {
+		color: inherit;
+		display: block;
+		font-size: 1.4rem;
+		margin-left: 2.8rem;
+	}
+	.radio-wrapper.has-error {
+		color: #f44336;
+	}
+	.radio-wrapper.has-error label:before {
+		border-color: #f44336;
+	}
+	.radio-wrapper.has-error span {
+		display: block;
+	}
+	.radio-wrapper.has-error input[type=radio]:checked + label:before {
+		border-color: #f44336;
+	}
+	.radio-wrapper.has-error input[type=radio]:checked + label:after {
+		background-color: #f44336;
+	}
+
+
+
+
+
+
+
+
+
+	&--accent {
+		input[type=text],
+		input[type=email],
+		textarea {
+			border-bottom: 1px solid rgba($text, .7);
+			color: $text;
+		}
+		input[type=text]::placeholder,
+		input[type=email]::placeholder,
+		textarea::placeholder {
+			color: $text;
+		}
+		.float-label {
+			color: $text;
+		}
+		.field-bar {
+			background: $text;
+		}
+		/* active state */
+		.float-field:focus ~ label,
+		.float-field:valid ~ label,
+		textarea:focus ~ label,
+		textarea:valid ~ label,
+		.fancy-select.selected ~ label,
+		.fancy-select.open ~ label {
+			color: $text;
+		}
+		select {
+			border-bottom: 1px solid rgba($accent, .7);
+			color: $accent;
+		}
+/* 		button {
+			background-color: transparent;
+			border-radius: 40px;
+			box-sizing: border-box;
+			color: $accent;
+			display: inline-block;
+			height: 46px;
+			position: relative;
+			width: 160px;
+			z-index: 2;
+			font-weight: 800;
+			text-decoration: none;
+			border: 2px solid $accent;
+		}
+		button:hover {
+			background: $accent;
+			color: $accent;
+		} */
+		div.fancy-select {
+			color: $text;
+			border-bottom: 1px solid rgba($text, .7);
+		}
+		div.fancy-select div.trigger {
+			color: $text;
+		}
+		div.fancy-select div.trigger:after {
+			border-top-color: $text;
+		}
+		div.fancy-select div.trigger.open {
+			background: $accent;
+			color: #fff;
+		}
+
+		div.fancy-select div.trigger.open:after {
+			border-top-color: #fff;
+		}
+
+		div.fancy-select ul.options {
+			background: $accent;
+		}
+
+		div.fancy-select ul.options li {
+			color: #fff;
+		}
+
+		div.fancy-select ul.options li.selected {
+			background: darken($accent, 10%);
+			color: #fff;
+		}
+
+		div.fancy-select ul.options li.hover {
+			background: darken($accent, 10%);
+			color: #fff;
+		}
+
+		/* CheckBox */
+		.checkbox-wrapper {
+			color: $text;
+		}
+		.checkbox-wrapper label {
+			color: $text;
+		}
+		.checkbox-wrapper label:before {
+			border: 2px solid $accent;
+		}
+		.checkbox-wrapper label:after {
+			border: 2px solid #fff;
+			border-top-style: none;
+			border-right-style: none;
+		}
+		.checkbox-wrapper input[type=checkbox]:checked + label:before {
+			background-color: $accent;
+			border-color: $accent;
+		}
+		
+		/* Radio */
+		.radio-wrapper {
+			color: $text;
+		}
+		.radio-wrapper label:before {
+			border: 2px solid $accent;
+		}
+		.radio-wrapper label:after {
+			background-color: rgba(0, 0, 0, 0.45);
+		}
+		.radio-wrapper input[type=radio]:checked + label:before {
+			border-color: $accent;
+		}
+		.radio-wrapper input[type=radio]:checked + label:after {
+			background-color: $accent;
+		}
+		.radio-wrapper.has-error {
+			color: #f44336;
+		}
+		.radio-wrapper.has-error label:before {
+			border-color: #f44336;
+		}
+		.radio-wrapper.has-error input[type=radio]:checked + label:before {
+			border-color: #f44336;
+		}
+		.radio-wrapper.has-error input[type=radio]:checked + label:after {
+			background-color: #f44336;
+		}
+	}
+}

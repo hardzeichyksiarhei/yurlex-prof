@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face("Muller", "../fonts/Muller/MullerLight", 300);
+@include font-face("Muller", "../fonts/Muller/MullerRegular");
+@include font-face("Muller", "../fonts/Muller/MullerMedium", 500);
+@include font-face("Muller", "../fonts/Muller/MullerBold", bold);
+@include font-face("Oswald", "../fonts/Oswald/Oswald-Bold", bold);

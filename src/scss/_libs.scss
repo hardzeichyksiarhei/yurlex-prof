@@ -1,0 +1,17 @@
+$fa-font-path:        "../fonts/FontAwesome" !default;
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap/scss/utilities/_sizing.scss";
+@import "../../node_modules/bootstrap/scss/utilities/_spacing.scss";
+@import "../../node_modules/bootstrap/scss/utilities/_flex.scss";
+@import "../../node_modules/bootstrap/scss/utilities/_borders.scss";
+@import "../../node_modules/bootstrap/scss/utilities/_position.scss";
+@import "../../node_modules/bootstrap/scss/_transitions.scss";
+
+@import "../../node_modules/bootstrap/scss/_tables.scss";
+@import "../../node_modules/bootstrap/scss/_modal.scss";
+
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";

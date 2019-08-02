@@ -1,0 +1,167 @@
+# Translation of Plugins - Justified Gallery - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Justified Gallery - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-01-16 10:01:30+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Justified Gallery - Stable (latest release)\n"
+
+#: justified-gallery.php:182
+msgid "<b>Justified Gallery Plugin</b>: You need PHP version at least 5.3 to run this plugin. You are currently using PHP version %s. Please upgrade PHP version or uninstall this plugin."
+msgstr "<b>Justified Gallery Plugin</b>: для запуска плагина необходимо использовать PHP, не ниже, версии 5.3. Сейчас, вы используете PHP %s. Пожалуйста, обновите версию PHP или удалите этот плагин."
+
+#: includes/admin/Promo/FeedbackNotice.php:83
+msgid "No thanks"
+msgstr "Нет, спасибо"
+
+#: includes/admin/Promo/FeedbackNotice.php:79
+msgid "Review Justified Gallery"
+msgstr "Отзыв о Justified Gallery"
+
+#: includes/admin/Promo/FeedbackNotice.php:73
+msgid "I have spent countless hours developing it, and it would mean a lot to me if you %ssupport it with a quick review on WordPress.org.%s"
+msgstr "Я потратил на его разработку много часов и для меня много значит, если вы %sподдержите эту работу кратким отзывом на WordPress.org.%s"
+
+#: includes/admin/Promo/FeedbackNotice.php:68
+msgid "Hey %s, it's Damian Góra from %s. You have used this free plugin for some time now, and I hope you like it!"
+msgstr "Привет %s, я Damian Góra из %s. Вы пользуетесь этим бесплатным плагином какое-то время, и я надеюсь, он вам понравился!"
+
+#: includes/fs/lib/includes/class-fs-plugin-updater.php:565
+msgid "Unable to connect to the filesystem. Please confirm your credentials."
+msgstr "Не удается подключиться к файловой системе. Пожалуйста, убедитесь, что ваши учетные данные имеют, соответствующие, полномочия."
+
+#: includes/admin/settings/Settings.php:156
+msgid "Photoswipe"
+msgstr "Photoswipe"
+
+#: includes/admin/settings/Settings.php:155
+msgid "Disable Lightbox"
+msgstr "Отключить лайтбокс"
+
+#: includes/admin/settings/Settings.php:152
+msgid "Allows users to open images in the Lightbox gallery."
+msgstr "Дает возможность открывать изображения галереи в лайтбоксе."
+
+#: includes/admin/settings/Settings.php:151
+msgid "Choose Lightbox"
+msgstr "Выбор лайтбокса"
+
+#: includes/admin/settings/Settings.php:143
+msgid "JG Standard"
+msgstr "JG Standard"
+
+#: includes/admin/settings/Settings.php:142
+msgid "Without styling"
+msgstr "Без оформления"
+
+#: includes/admin/settings/Settings.php:138
+msgid "Choose tiles style"
+msgstr "Выбор стиля заголовков"
+
+#: includes/admin/settings/Settings.php:78
+msgid "Tiles style"
+msgstr "Стиль заголовков"
+
+#: includes/admin/admin.php:48
+msgid "You use the Justified Gallery plugin. The options (Columns) and (Size) will be ignored. The option (Link to) can also be overridden by your lightbox settings."
+msgstr "Вы используете плагин Justified Gallery. Настройки (Колонки) и (Размер) будут игнорироваться. Настройка (Ссылка) может быть переопределена при помощи настроек лайтбокса."
+
+#: includes/TilesStyle/JGStandard/JGStandard.php:45
+msgid "Caption"
+msgstr "Заголовок"
+
+#: includes/admin/settings/Settings.php:82
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#. Author URI of the plugin/theme
+msgid "http://damiangora.com"
+msgstr "http://damiangora.com"
+
+#. Author of the plugin/theme
+msgid "Damian Góra"
+msgstr "Damian Góra"
+
+#. Description of the plugin/theme
+msgid "Display native WordPress galleries in a responsive justified image grid and a pretty Lightbox."
+msgstr "Отображение нативной WordPress галереи в виде, аккуратно, выровненной сетки изображений с адаптивной версткой и эффектом лайтбокса."
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/justified-gallery"
+msgstr "https://ru.wordpress.org/plugins/justified-gallery"
+
+#: includes/admin/views/settings.php:10
+msgid "Justified Gallery Settings"
+msgstr "Настройки Justified Gallery"
+
+#: includes/admin/settings/Settings.php:131
+msgid "Type <code>-1</code> to remove the limit of the maximum row height."
+msgstr "Значение <code>-1</code> удаляет ограничение максимальной высоты строки."
+
+#: includes/admin/settings/Settings.php:128
+msgid "Max row height"
+msgstr "Максимальная высота строки"
+
+#: includes/admin/settings/Settings.php:123
+msgid "The preferred height of rows."
+msgstr "Предпочтительная высота строк."
+
+#: includes/admin/settings/Settings.php:120
+msgid "Row height"
+msgstr "Высота строки"
+
+#: includes/admin/settings/Settings.php:112
+msgid "Space between images"
+msgstr "Расстояние между изображениями"
+
+#: includes/admin/settings/Settings.php:107
+msgid "Decide how to position the last row of images. Default the last row images are aligned to the left. You can also hide the row if it can't be justified and aligned to the center or to the right"
+msgstr "Укажите формат для изображений в последней строке галереи. По умолчанию, изображения, в последней строке, выровнены по левому краю. Также, можно скрыть строчку, если она не может быть выровнена по ширине, по центру или по правому краю."
+
+#: includes/admin/settings/Settings.php:104
+msgid "Justify"
+msgstr "Выравнивание по ширине"
+
+#: includes/admin/settings/Settings.php:103
+msgid "Align right"
+msgstr "Выравнивание по правому краю"
+
+#: includes/admin/settings/Settings.php:102
+msgid "Align center"
+msgstr "Выравнивание по центру"
+
+#: includes/admin/settings/Settings.php:101
+msgid "Align left"
+msgstr "Выравнивание по левому краю"
+
+#: includes/admin/settings/Settings.php:98
+msgid "Last row"
+msgstr "Последняя строка"
+
+#: includes/TilesStyle/JGStandard/JGStandard.php:49
+#: includes/admin/settings/Settings.php:105
+msgid "Hide"
+msgstr "Скрыть"
+
+#: includes/TilesStyle/JGStandard/JGStandard.php:48
+msgid "Show"
+msgstr "Отображать"
+
+#: includes/admin/settings/Settings.php:74
+msgid "Basic"
+msgstr "Основные"
+
+#: includes/admin/settings/SettingsApi.php:393
+msgid "Choose File"
+msgstr "Выбор файла"
+
+#. #-#-#-#-#  justified-gallery-code.pot (Justified Gallery 1.2.3)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: includes/admin/admin.php:26
+msgid "Justified Gallery"
+msgstr "Justified Gallery"
